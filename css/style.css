@@ -260,10 +260,15 @@ h3 {
 
 /* ===== 特徴カード ===== */
 
-.feature-grid,
-.card-grid {
+.feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
 }
 
