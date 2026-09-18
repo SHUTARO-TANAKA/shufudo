@@ -136,7 +136,7 @@ h3 {
 }
 
 .logo img {
-  height: 44px;
+  height: 56px;
   width: auto;
 }
 
@@ -183,9 +183,26 @@ h3 {
   color: var(--color-primary-dark);
 }
 
+.hero-logo {
+  width: 220px;
+  margin: 0 auto 0.6em;
+}
+
 .hero-copy {
   color: var(--color-text-soft);
   margin-bottom: 2em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ===== ページヒーロー(下層ページ用) ===== */
