@@ -173,7 +173,7 @@ h3 {
 /* ===== ヒーロー ===== */
 
 .hero {
-  background: linear-gradient(180deg, var(--color-primary-soft), #fff);
+  background: linear-gradient(180deg, #fff, var(--color-primary-soft) 55%, #fff);
   padding: 80px 0;
   text-align: center;
 }
@@ -222,7 +222,7 @@ h3 {
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
 }
 
@@ -266,7 +266,7 @@ h3 {
   border-radius: 8px;
   background: #fff;
   padding: 6px;
-  margin-bottom: 6px;
+  margin: 0 auto 6px;
 }
 
 .qr-block p {
