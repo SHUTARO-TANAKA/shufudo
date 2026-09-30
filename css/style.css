@@ -29,6 +29,26 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.8;
+  overflow-wrap: break-word;
+}
+
+/* 見出しやボタンなど短いテキストは、熟語・カタカナ語の
+   まとまりを保ったまま改行する。長い地の文には適用しない
+   (句読点の少ない一文がまるごと1語扱いになり、はみ出し防止で
+   かえって単語の途中が強制的に割れてしまうため)。地の文の中の
+   長い熟語・カタカナ語は個別に .jword で囲んで対応する。 */
+h1,
+h2,
+h3,
+.section-lead,
+.nav a,
+.footer-nav a,
+.btn,
+.price-table th,
+.price-table td,
+.qualification-list li,
+.jword {
+  word-break: keep-all;
 }
 
 img {
@@ -299,8 +319,8 @@ h3 {
 }
 
 .feature-card .icon {
-  font-size: 2rem;
-  margin-bottom: 0.4em;
+  color: var(--color-primary);
+  margin-bottom: 0.6em;
 }
 
 .card h3 {
